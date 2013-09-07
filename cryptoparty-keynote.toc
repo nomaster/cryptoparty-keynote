@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.27pt}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Wer?}{2}{0}{1}
