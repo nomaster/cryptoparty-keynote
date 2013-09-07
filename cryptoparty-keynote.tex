@@ -21,6 +21,16 @@
 
 \date[]{8. September 2013}
 
+\renewcommand{\quote}[2]
+{
+  \begin{exampleblock}{}
+    {\large “#1”}
+    \vskip5mm
+    \hspace*\fill{\small--- #2}
+  \end{exampleblock}
+}
+
+
 \begin{document}
 
   \begin{frame}
@@ -46,12 +56,9 @@
   \end{frame}
 
   \begin{frame}{Zitat}
-    \begin{exampleblock}{}
-      {\large “Man is least himself when he talks in his own person.\\
+    \quote{Man is least himself when he talks in his own person.\\
       Give him a mask, and he will tell you the truth.”}
-      \vskip5mm
-      \hspace*\fill{\small--- Oscar Wilde}
-    \end{exampleblock}
+      {Oscar Wilde}
   \end{frame}
   \begin{frame}{Manifest}
     \begin{enumerate}
@@ -98,6 +105,87 @@
     \end{itemize}
   \end{frame}
 
+  \begin{frame}{Die Lösung}
+    \begin{itemize}
+      \pause
+      \item Kryptographie verbirgt Informationen vor der Öffentlichkeit
+      \pause
+      \item Das Geheimnis muss bekannt sein
+      \pause
+      \item Ohne Vertrauen läuft es nicht
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Vertrauen}
+    “Traue niemandem!” --- anonymous
+    \begin{itemize}
+      \pause
+      \item Autoritäten sind an ihrem Ende
+      \pause
+      \item Wir bilden individuelle Vetrauensverhältnisse
+      \pause
+      \item Ein Netz des Vertrauens entsteht
+      \pause
+      \item (Tele-)Kommunikation als erweiterte Privatsphäre
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Identität}
+    “Man kann nicht zweimal in den selben Fluss steigen” --- panta rhei
+    \begin{itemize}
+      \pause
+      \item Menschen ändern sich
+      \pause
+      \item Schlüssel ändern sich
+      \pause
+      \item Vertrauen heißt die Autonomie des Anderen anzuerkennen
+      \pause
+      \item Vertrauen heißt auch, die Verschwiegenheit des Anderen anzunehmen
+      \pause
+      \item Vertrauen entsteht über die Zeit
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Schlüssel}
+    \begin{itemize}
+      \pause
+      \item Symmetrische Schlüssel für Datenträger
+      \pause
+      \item Asymmetrische Schlüssel für Telekommunikation
+      \pause
+      \item Verschlüsselung ist ein Protokoll
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Meta}
+    Nun kommt die Enttäuschung
+    \begin{itemize}
+      \pause
+      \item Verschlüsselung versteckt nur die Nachricht, nicht den Umschlag
+      \pause
+      \item Die Metadaten bleiben öffentlich
+        \begin{itemize}
+          \pause
+          \item Identität der Sender und Empfänger
+          \pause
+          \item Zeitpunkt und Zugangspunkt
+          \pause
+          \item Länge und Medium
+        \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Anonymität}
+    \begin{itemize}
+      \pause
+      \item Hinreichend verschleierte Identität
+      \pause
+      \item Temporäre, vom Körper getrennte Identität
+      \pause
+      \item Black Bloc als möglichst großer, aber eingeschränkter Personenkreis
+    \end{itemize}
+  \end{frame}
+
   \begin{frame}{Definition}
     \begin{exampleblock}
       \large{Ein System muss auch dann sicher sein,\\wenn das gesamte System offen liegt,\\ausgenommen des Geheimnisses.}
@@ -109,19 +197,11 @@
   \begin{frame}{Sicherheit}
     \begin{itemize}
       \pause
-      \item (Tele-)Kommunikation als erweiterte Privatsphäre
-      \pause
       \item Keine Sicherheit durch Obskurität
       \pause
       \item Die Software muss einsehbar sein.
       \pause
     \end{itemize}
   \end{frame}
-
-  Web of Trust
-  Vertrauen
-  Öffentlich, privat
-  Schlüssel
-  Metadaten
 
 \end{document}
