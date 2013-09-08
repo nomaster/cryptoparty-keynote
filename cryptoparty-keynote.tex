@@ -14,7 +14,7 @@
    \end{frame}
 }
 
-\title{Das\\„wer, wie, was, warum?“\\der Verschlüsselung}
+\title{Das \\„wer, wie, was, warum?“ \\der Verschlüsselung}
 
 \author[Mic]{Mic \flq nomaster@chaosdorf.de\frq}
 
@@ -56,7 +56,7 @@
 
   \begin{frame}{Zitat}
     \quote{Man is least himself when he talks in his own person.\\
-      Give him a mask, and he will tell you the truth.”}
+      Give him a mask, and he will tell you the truth.}
       {Oscar Wilde}
   \end{frame}
   \begin{frame}{Manifest}
@@ -105,14 +105,21 @@
   \end{frame}
 
   \begin{frame}{Die Lösung}
-    \begin{itemize}
-      \pause
-      \item Kryptographie verbirgt Informationen vor der Öffentlichkeit
-      \pause
-      \item Das Geheimnis muss bekannt sein
-      \pause
-      \item Ohne Vertrauen läuft es nicht
-    \end{itemize}
+    \begin{columns}
+      \begin{column}{.5\textwidth}
+        \includegraphics[width=\textwidth]{enigma.jpg}
+      \end{column}
+      \begin{column}{.5\textwidth}
+        \begin{itemize}
+          \pause
+          \item Kryptographie verbirgt Informationen vor der Öffentlichkeit
+          \pause
+          \item Das Geheimnis muss bekannt sein
+          \pause
+          \item Ohne Vertrauen läuft es nicht
+        \end{itemize}
+      \end{column}
+    \end{columns}
   \end{frame}
 
   \begin{frame}{Vertrauen}
@@ -121,7 +128,7 @@
       \pause
       \item Autoritäten sind an ihrem Ende
       \pause
-      \item Wir bilden individuelle Vetrauensverhältnisse
+      \item Wir bilden individuelle Vertrauensverhältnisse
       \pause
       \item Ein Netz des Vertrauens entsteht
       \pause
@@ -146,14 +153,21 @@
   \end{frame}
 
   \begin{frame}{Schlüssel}
-    \begin{itemize}
-      \pause
-      \item Symmetrische Schlüssel für Datenträger
-      \pause
-      \item Asymmetrische Schlüssel für Telekommunikation
-      \pause
-      \item Verschlüsselung ist ein Protokoll
-    \end{itemize}
+    \begin{columns}
+      \begin{column}{.5\textwidth}
+        \includegraphics[width=\textwidth]{security.jpg}
+      \end{column}
+      \begin{column}{.5\textwidth}
+        \begin{itemize}
+          \pause
+          \item Symmetrische Schlüssel für Datenträger
+          \pause
+          \item Asymmetrische Schlüssel für Telekommunikation
+          \pause
+          \item Verschlüsselung ist ein Protokoll
+        \end{itemize}
+      \end{column}
+    \end{columns}
   \end{frame}
 
   \begin{frame}{Meta}
@@ -175,32 +189,83 @@
   \end{frame}
 
   \begin{frame}{Anonymität}
-    \begin{itemize}
-      \pause
-      \item Hinreichend verschleierte Identität
-      \pause
-      \item Temporäre, vom Körper getrennte Identität
-      \pause
-      \item Black Bloc als möglichst großer, aber eingeschränkter Personenkreis
-    \end{itemize}
-  \end{frame}
-
-  \begin{frame}{Definition}
-    \begin{exampleblock}
-      \large{Ein System muss auch dann sicher sein,\\wenn das gesamte System offen liegt,\\ausgenommen des Geheimnisses.}
-      \vskip5mm
-      \hspace*\fill{\small--- Kerckhoff’sches Prinzip}
-    \end{exampleblock}
+    \begin{columns}
+      \begin{column}{.5\textwidth}
+        \includegraphics[width=\textwidth]{anonymous.jpg}
+      \end{column}
+      \begin{column}{.5\textwidth}
+        \begin{itemize}
+          \pause
+          \item Hinreichend verschleierte Identität
+          \pause
+          \item Temporäre, vom Körper getrennte Identität
+          \pause
+          \item Black Bloc als möglichst großer, aber eingeschränkter Personenkreis
+          \pause
+          \item sie auch: Pseudonymität, Autonymität
+        \end{itemize}
+      \end{column}
+    \end{columns}
   \end{frame}
 
   \begin{frame}{Sicherheit}
+    \quote{Ein System muss auch dann sicher sein,\\wenn das gesamte System offen liegt,\\ausgenommen des Geheimnisses.}{Kerckhoff’sches Prinzip}
     \begin{itemize}
-      \pause
-      \item Keine Sicherheit durch Obskurität
       \pause
       \item Die Software muss einsehbar sein.
       \pause
+      \item Der Transport kann öffentlich sein.
+      \pause
+      \item Keine Sicherheit durch Obskurität!
     \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Werkzeuge}
+    Freie Software für Kryptographie
+    \begin{itemize}
+      \pause
+      \item Verschlüsselung von Datenträgern
+      \begin{itemize}
+        \pause
+        \item TrueCrypt
+        \pause
+        \item LUKS (Linux)
+      \end{itemize}
+      \pause
+      \item Verschlüsselung von E-Mails
+      \begin{itemize}
+        \pause
+        \item GnuPG
+        \pause
+        \item mit Thunderbird und Enigmail
+        \pause
+        \item mit GPGTools und Apple Mail
+        \pause
+      \end{itemize}
+      \pause
+      \item Anonymisierung von Verbindungen
+      \begin{itemize}
+        \pause
+        \item OpenVPN
+        \pause
+        \item Tor
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Dokumentation}
+    Handbücher
+    \begin{itemize}
+      \pause
+      \item CryptoParty Handbook \\ \url{http://www.cryptoparty.in/documentation/handbook}
+      \pause
+      \item Wikibooks Privacy-Handbuch \\ \url{https://de.wikibooks.org/wiki/Privacy-Handbuch}
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \center
+    \includegraphics[width=.5\textwidth]{xkcd.jpg}
   \end{frame}
 
 \end{document}
