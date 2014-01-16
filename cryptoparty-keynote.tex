@@ -3,8 +3,8 @@
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[absolute,overlay]{textpos}
-\usepackage{xcolor}
-\usetheme{CambridgeUS}
+\usepackage{hyperref}
+\usetheme{lankton-keynote}
 
 \AtBeginSection[]
 {
@@ -18,9 +18,9 @@
 
 \author[Mic]{Mic \flq nomaster@chaosdorf.de\frq}
 
-\institute[chaosdorf]{Chaos Computer Club Düsseldorf / Chaosdorf e.V.}
+\institute[kunstakademie]{Kunstakademie Düsseldorf}
 
-\date[]{8. September 2013}
+\date[]{15. Januar 2014}
 
 \renewcommand{\quote}[2]
 {
@@ -40,18 +40,17 @@
 
   \begin{frame}{CryptoParty}
     \begin{itemize}
-      \item
-        Wir möchten den Menschen den praktischen Nutzen von Kryptographie erklären\\
-        und ihnen bei der Installation der Programme auf ihren eigenen Geräten helfen.
-    \pause
-      \item
-        Wir hoffen, dass sie durch eigenständiges Handeln\\
-        den Nutzen und die Wichtigkeit von Kryptographie verstehen.
-    \pause
-      \item
-        CryptoParties finden weltweit selbstorganisiert statt.\\
-        Dabei sollen sie unabhängig und kostenlos bleiben.
+      \item Zeige den Menschen praktische Verschlüsselung
+      \item Mache es unabhängig und barrierefrei
+      \pause
+      \item Learning by Doing
+      \item Have a lot of fun
     \end{itemize}
+  \end{frame}
+ 
+  \begin{frame}{Person des Jahres 2013}
+    \includegraphics[width=\textwidth]{snowden.png}\\
+    Edward Snowden
   \end{frame}
 
   \begin{frame}{Zitat}
@@ -59,43 +58,30 @@
       Give him a mask, and he will tell you the truth.}
       {Oscar Wilde}
   \end{frame}
-  \begin{frame}{Manifest}
-    \begin{enumerate}
-      \pause
-      \item Wir alle sind die User.
-      \pause
-      \item Privatsphäre ist Menschenrecht.
-      \pause
-      \item Privatsphäre ist ein Recht des Individuums.
-      \pause
-      \item Privatsphäre ist Hoheit des Individuums.
-      \pause
-      \item Alle Menschen ist dieses Recht zuteil.
-      \pause
-      \item Kryptographie ist für alle da.
-      \pause
-      \item Überwachung und Zensur sind untrennbar. Maschinen sollen dazu nicht dienen.
-      \pause
-      \item Programmcode ist Sprache und unterliegt dem Recht auf freie Meinungsäußerung.
-      \pause
-      \item Die Feinde der Kryptographie wären im 15. Jahrhundert die Feinde der Pressefreihet gewesen.
-    \end{enumerate}
+
+  \begin{frame}{Ohne Verschlüsselung}
+    \includegraphics[width=\textwidth]{mail.jpg}
+  \end{frame}
+
+  \begin{frame}{Mit Verschlüsselung}
+    \includegraphics[width=\textwidth]{encryption.jpg}
   \end{frame}
 
   \begin{frame}{Privatsphäre}
     Privatsphäre ist…
-    \begin{itemize}
+    \begin{enumerate}
       \pause
       \item Der Bereich der persönlichen Freiheit
       \pause
       \item Das Recht, in Ruhe gelassen zu werden
       \pause
-      \item Persönliche Daten, deren Verbreitung das Individuum kontrolliert
-    \end{itemize}
+      \item Kontrolle über personenbezogene Daten
+    \end{enumerate}
   \end{frame}
 
   \begin{frame}{Warum kämpfen?}
     “Ich habe doch nichts zu verbergen.”
+    \pause
     \begin{itemize}
       \item Unbewusste Geheimnisse
       \item Unsichere Zukunft
@@ -104,7 +90,7 @@
     \end{itemize}
   \end{frame}
 
-  \begin{frame}{Die Lösung}
+  \begin{frame}{Prinzip Verschlüsselung}
     \begin{columns}
       \begin{column}{.5\textwidth}
         \includegraphics[width=\textwidth]{enigma.jpg}
@@ -120,35 +106,17 @@
         \end{itemize}
       \end{column}
     \end{columns}
-  \end{frame}
-
-  \begin{frame}{Vertrauen}
-    “Traue niemandem!” --- anonymous
-    \begin{itemize}
-      \pause
-      \item Autoritäten sind an ihrem Ende
-      \pause
-      \item Wir bilden individuelle Vertrauensverhältnisse
-      \pause
-      \item Ein Netz des Vertrauens entsteht
-      \pause
-      \item (Tele-)Kommunikation als erweiterte Privatsphäre
-    \end{itemize}
+    \pause
+    \quote{Traue niemandem!}{anonymous}
   \end{frame}
 
   \begin{frame}{Identität}
-    “Man kann nicht zweimal in den selben Fluss steigen” --- panta rhei
+    \quote{Man kann nicht zweimal in den selben Fluss steigen}{panta rhei}
+    \pause
     \begin{itemize}
-      \pause
-      \item Menschen ändern sich
-      \pause
-      \item Schlüssel ändern sich
-      \pause
-      \item Vertrauen heißt die Autonomie des Anderen anzuerkennen
-      \pause
-      \item Vertrauen heißt auch, die Verschwiegenheit des Anderen anzunehmen
-      \pause
       \item Vertrauen entsteht über die Zeit
+      \item Vertrauen braucht Identität
+      \item Vertrauen ist vergänglich
     \end{itemize}
   \end{frame}
 
@@ -159,11 +127,8 @@
       \end{column}
       \begin{column}{.5\textwidth}
         \begin{itemize}
-          \pause
           \item Symmetrische Schlüssel für Datenträger
-          \pause
           \item Asymmetrische Schlüssel für Telekommunikation
-          \pause
           \item Verschlüsselung ist ein Protokoll
         \end{itemize}
       \end{column}
@@ -171,45 +136,25 @@
   \end{frame}
 
   \begin{frame}{Meta}
-    Nun kommt die Enttäuschung
+    Nun kommt die Enttäuschung:
+    \pause
     \begin{itemize}
-      \pause
       \item Verschlüsselung versteckt nur die Nachricht, nicht den Umschlag
-      \pause
-      \item Die Metadaten bleiben öffentlich
-        \begin{itemize}
-          \pause
-          \item Identität der Sender und Empfänger
-          \pause
-          \item Zeitpunkt und Zugangspunkt
-          \pause
-          \item Länge und Medium
-        \end{itemize}
+      \item Metadaten bleiben öffentlich
     \end{itemize}
-  \end{frame}
-
-  \begin{frame}{Anonymität}
-    \begin{columns}
-      \begin{column}{.5\textwidth}
-        \includegraphics[width=\textwidth]{anonymous.jpg}
-      \end{column}
-      \begin{column}{.5\textwidth}
-        \begin{itemize}
-          \pause
-          \item Hinreichend verschleierte Identität
-          \pause
-          \item Temporäre, vom Körper getrennte Identität
-          \pause
-          \item Black Bloc als möglichst großer, aber eingeschränkter Personenkreis
-          \pause
-          \item sie auch: Pseudonymität, Autonymität
-        \end{itemize}
-      \end{column}
-    \end{columns}
+    \pause
+    \begin{itemize}
+      \item Identität der Sender und Empfänger
+      \item Zeitpunkt und Zugangspunkt
+      \item Länge und Medium
+    \end{itemize}
+    \pause
+    \quote{Es kommt auf das Angriffsszenario an. Und es ist kompliziert.}{EFF}
   \end{frame}
 
   \begin{frame}{Sicherheit}
-    \quote{Ein System muss auch dann sicher sein,\\wenn das gesamte System offen liegt,\\ausgenommen des Geheimnisses.}{Kerckhoff’sches Prinzip}
+    \quote{Ein System muss auch dann sicher sein,\\wenn das gesamte System
+    offen liegt:\\ausgenommen des Geheimnisses.}{Kerckhoff’sches Prinzip}
     \begin{itemize}
       \pause
       \item Die Software muss einsehbar sein.
@@ -220,36 +165,32 @@
     \end{itemize}
   \end{frame}
 
-  \begin{frame}{Werkzeuge}
-    Freie Software für Kryptographie
+  \begin{frame}{Schlüsselwerkzeuge}
+    \pause
+    Verschlüsselung von Datenträgern
     \begin{itemize}
       \pause
-      \item Verschlüsselung von Datenträgern
-      \begin{itemize}
-        \pause
-        \item TrueCrypt
-        \pause
-        \item LUKS (Linux)
-      \end{itemize}
+      \item TrueCrypt
       \pause
-      \item Verschlüsselung von E-Mails
-      \begin{itemize}
-        \pause
-        \item GnuPG
-        \pause
-        \item mit Thunderbird und Enigmail
-        \pause
-        \item mit GPGTools und Apple Mail
-        \pause
-      \end{itemize}
+      \item LUKS (Linux)
+    \end{itemize}
+    \pause
+    Verschlüsselung von Nachrichten
+    \begin{itemize}
       \pause
-      \item Anonymisierung von Verbindungen
-      \begin{itemize}
-        \pause
-        \item OpenVPN
-        \pause
-        \item Tor
-      \end{itemize}
+      \item Enigmail für Thunderbird
+      \pause
+      \item GPGTools für Apple Mail
+      \paus
+      \item OTR für Jabber
+    \end{itemize}
+    \pause
+    Verschlüsselung von Verbindungen
+    \begin{itemize}
+      \pause
+      \item OpenVPN
+      \pause
+      \item Tor
     \end{itemize}
   \end{frame}
 
