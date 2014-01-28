@@ -14,13 +14,11 @@
    \end{frame}
 }
 
-\title{Das \\„wer, wie, was, warum?“ \\der Verschlüsselung}
+\title{Das mit der Verschlüsselung}
 
 \author[Mic]{Mic \flq nomaster@chaosdorf.de\frq}
 
-\institute[kunstakademie]{Kunstakademie Düsseldorf}
-
-\date[]{15. Januar 2014}
+\date[]{25. Januar 2014}
 
 \renewcommand{\quote}[2]
 {
@@ -38,33 +36,10 @@
     \titlepage
   \end{frame}
 
-  \begin{frame}{CryptoParty}
-    \begin{itemize}
-      \item Zeige den Menschen praktische Verschlüsselung
-      \item Mache es unabhängig und barrierefrei
-      \pause
-      \item Learning by Doing
-      \item Have a lot of fun
-    \end{itemize}
-  \end{frame}
- 
-  \begin{frame}{Person des Jahres 2013}
-    \includegraphics[width=\textwidth]{snowden.png}\\
-    Edward Snowden
-  \end{frame}
-
   \begin{frame}{Zitat}
     \quote{Man is least himself when he talks in his own person.\\
       Give him a mask, and he will tell you the truth.}
       {Oscar Wilde}
-  \end{frame}
-
-  \begin{frame}{Ohne Verschlüsselung}
-    \includegraphics[width=\textwidth]{mail.jpg}
-  \end{frame}
-
-  \begin{frame}{Mit Verschlüsselung}
-    \includegraphics[width=\textwidth]{encryption.jpg}
   \end{frame}
 
   \begin{frame}{Privatsphäre}
@@ -76,80 +51,39 @@
       \item Das Recht, in Ruhe gelassen zu werden
       \pause
       \item Kontrolle über personenbezogene Daten
+      \pause
+      \item Verschlüsselung!
     \end{enumerate}
   \end{frame}
 
   \begin{frame}{Warum kämpfen?}
-    “Ich habe doch nichts zu verbergen.”
+    “Wer nichts zu verbergen hat, hat auch nichts zu befürchten.”
     \pause
-    \begin{itemize}
-      \item Unbewusste Geheimnisse
-      \item Unsichere Zukunft
-      \item Auswirkungen auf andere
-      \item Chilling Effect
-    \end{itemize}
+    \includegraphics[width=2cm]{goebbels.jpg} 
+  \end{frame}
+
+  \begin{frame}{\ldots wie eine Postkarte}
+    \includegraphics[width=\textwidth]{postcard.jpg}
   \end{frame}
 
   \begin{frame}{Prinzip Verschlüsselung}
     \begin{columns}
-      \begin{column}{.5\textwidth}
+      \begin{column}{.3\textwidth}
         \includegraphics[width=\textwidth]{enigma.jpg}
       \end{column}
-      \begin{column}{.5\textwidth}
+      \begin{column}{.7\textwidth}
         \begin{itemize}
           \pause
           \item Kryptographie verbirgt Informationen vor der Öffentlichkeit
           \pause
-          \item Das Geheimnis muss bekannt sein
+          \item Ein Geheimnis muss etabliert sein
           \pause
-          \item Ohne Vertrauen läuft es nicht
+          \item Ohne Vertrauen bringt es nichts
         \end{itemize}
       \end{column}
     \end{columns}
     \pause
     \quote{Traue niemandem!}{anonymous}
-  \end{frame}
-
-  \begin{frame}{Identität}
-    \quote{Man kann nicht zweimal in den selben Fluss steigen}{panta rhei}
-    \pause
-    \begin{itemize}
-      \item Vertrauen entsteht über die Zeit
-      \item Vertrauen braucht Identität
-      \item Vertrauen ist vergänglich
-    \end{itemize}
-  \end{frame}
-
-  \begin{frame}{Schlüssel}
-    \begin{columns}
-      \begin{column}{.5\textwidth}
-        \includegraphics[width=\textwidth]{security.jpg}
-      \end{column}
-      \begin{column}{.5\textwidth}
-        \begin{itemize}
-          \item Symmetrische Schlüssel für Datenträger
-          \item Asymmetrische Schlüssel für Telekommunikation
-          \item Verschlüsselung ist ein Protokoll
-        \end{itemize}
-      \end{column}
-    \end{columns}
-  \end{frame}
-
-  \begin{frame}{Meta}
-    Nun kommt die Enttäuschung:
-    \pause
-    \begin{itemize}
-      \item Verschlüsselung versteckt nur die Nachricht, nicht den Umschlag
-      \item Metadaten bleiben öffentlich
-    \end{itemize}
-    \pause
-    \begin{itemize}
-      \item Identität der Sender und Empfänger
-      \item Zeitpunkt und Zugangspunkt
-      \item Länge und Medium
-    \end{itemize}
-    \pause
-    \quote{Es kommt auf das Angriffsszenario an. Und es ist kompliziert.}{EFF}
   \end{frame}
 
   \begin{frame}{Sicherheit}
@@ -165,6 +99,29 @@
     \end{itemize}
   \end{frame}
 
+  \begin{frame}{Public Key Infrastructure}
+    \includegraphics[width=5cm]{key.jpg}
+    \pause
+    \begin{itemize}
+      \item Schlüsselpaar aus öffentlichem und privaten Schlüssel
+      \pause
+      \item Verschlüsselung mit öffentlichem Schlüssel
+      \pause
+      \item Signatur mit privatem Schlüssel
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Erlösung?}
+    \includegraphics[width=7cm]{mail.jpg}
+    \pause
+    \begin{itemize}
+      \item Verschlüsselung versteckt nur bestimmte Informationen
+      \item Metadaten bleiben öffentlich und überwachbar
+    \end{itemize}
+    \pause
+    \quote{Es kommt auf das Angriffsszenario an. Und es ist kompliziert.}{}
+  \end{frame}
+
   \begin{frame}{Schlüsselwerkzeuge}
     \pause
     Verschlüsselung von Datenträgern
@@ -178,11 +135,11 @@
     Verschlüsselung von Nachrichten
     \begin{itemize}
       \pause
-      \item Enigmail für Thunderbird
+      \item OpenPGP mit Enigmail für Thunderbird
       \pause
-      \item GPGTools für Apple Mail
+      \item OpenPGP mit GPGTools für Apple Mail
       \paus
-      \item OTR für Jabber
+      \item Off-The-Record (OTR) für Pidgin, Adium
     \end{itemize}
     \pause
     Verschlüsselung von Verbindungen
@@ -194,7 +151,19 @@
     \end{itemize}
   \end{frame}
 
-  \begin{frame}{Dokumentation}
+  \begin{frame}{CryptoParty}
+    \begin{itemize}
+      \item Zeige den Menschen praktische Verschlüsselung
+      \pause
+      \item Mache es unabhängig und barrierefrei
+      \pause
+      \item Learning by Doing
+      \pause
+      \item Have a lot of fun
+    \end{itemize}
+  \end{frame}
+ 
+ \begin{frame}{Dokumentation}
     Handbücher
     \begin{itemize}
       \pause
@@ -202,11 +171,6 @@
       \pause
       \item Wikibooks Privacy-Handbuch \\ \url{https://de.wikibooks.org/wiki/Privacy-Handbuch}
     \end{itemize}
-  \end{frame}
-
-  \begin{frame}
-    \center
-    \includegraphics[width=.5\textwidth]{xkcd.jpg}
   \end{frame}
 
 \end{document}
